@@ -1,0 +1,8 @@
+# Create it in the current folder instead of a new one
+-run terminal 
+
+flutter create --platforms=android,ios .
+
+flutter pub get
+
+flutter run
