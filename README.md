@@ -61,32 +61,8 @@ flutter run --dart-define=USE_MOCK=true
 flutter test
 ```
 
----
-
-## Project structure
-
-One folder per screen, one class per file.
-
-```
-lib/
-├── main.dart
-├── app.dart                  # MaterialApp, theme, bottom navigation
-├── core/
-│   ├── api/                  # CoinGecko client, fallback provider
-│   ├── cache/                # Response cache and rate-limit handling
-│   ├── config/               # Mock mode flag, constants
-│   └── widgets/              # Shared UI: skeletons, error state, banner
-├── data/
-│   ├── models/               # Coin, MarketStats, ChartPoint
-│   ├── mock/                 # Built-in sample data
-│   └── repositories/         # Data logic, kept out of the UI
-└── screens/
-    ├── market/               # List, search, sort chips, filter sheet
-    ├── coin_detail/          # Header, chart, stats, description
-    ├── statistics/           # Stat cards, dominance donut, movers
-    └── watchlist/            # Reorderable list, edit mode
-```
-
+ 
+ 
 ---
 
 ## Using the app
